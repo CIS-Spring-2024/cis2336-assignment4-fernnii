@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fern's Taqueria</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Fern's Taqueria</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Fern's Taqueria!</h2>
+        <p>Discover the taste of authentic Mexico.</p>
+    </section> 
+    <div id="filter-options">
+        <label for="filter">Filter by Category:</label>
+        <select id="filter">
+            <option value="All">All</option>
+            <option value="Tacos">Tacos</option>
+            <option value="Quesadilla">Quesadilla</option>
+            <option value="Burrito">Burrito</option>
+            <!-- Add more categories here -->
+        </select>
+    </div>
+    
+    <div id="sort-options">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option value="Default">Default</option>
+            <option value="PriceLowToHigh">Price Low to High</option>
+            <option value="PriceHighToLow">Price High to Low</option>
+        </select>
+    </div>
+    
+    <div id="search-container">
+        <label for="search">Search:</label>
+        <input type="text" id="search" placeholder="Search menu items">
+    </div> 
+
+    
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-items"></div>
+    </section>
+    <div id="cart">
+        <h2>Cart</h2>
+        <div class="cart-items"></div>
+        <p>Total: <span id="total-price">$0.00</span></p>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="checkout">Checkout</button>
+    </div>
+    
+    <script src="script.js" defer></script>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for reservations or any inquiries:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <a href="biography.html">Owner's Biography</a> 
+
+    <footer>
+        <p>&copy; Fern's Taqueria. All rights reserved.</p>
+    </footer>
+</body>
+</html>
